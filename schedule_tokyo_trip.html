@@ -8,48 +8,47 @@
         body {
             font-family: 'Pretendard', 'Apple SD Gothic Neo', Arial, sans-serif;
             margin: 0;
-            background: #f7f7f7;
+            background: #fff5f5;
             color: #222;
             line-height: 1.65;
         }
         header {
             text-align: center;
-            padding: 26px 0 14px;
-            background: linear-gradient(90deg, #424242, #757575);
+            padding: 28px 0 16px;
+            background: linear-gradient(90deg, #e57373, #ef9a9a);
             color: #fff;
         }
         h1 {
             margin: 0;
             font-size: 1.8em;
-            letter-spacing: 0.5px;
         }
         .tab-bar {
             text-align: center;
-            background: #e0e0e0;
+            background: #ffecec;
             padding: 10px 0;
             position: sticky;
             top: 0;
             z-index: 10;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
         .tab-button {
             background: #ffffff;
-            border: 1px solid #bdbdbd;
+            border: 1px solid #ffcdd2;
             border-radius: 20px;
             margin: 4px 6px;
             padding: 8px 18px;
             font-size: 0.95em;
             cursor: pointer;
             transition: all 0.2s ease;
-            color: #424242;
+            color: #d32f2f;
         }
         .tab-button:hover {
-            background: #eeeeee;
+            background: #ffe5e5;
         }
         .tab-button.active {
-            background: #616161;
+            background: #ef5350;
             color: #fff;
-            border-color: #424242;
+            border-color: #e57373;
             font-weight: 600;
         }
         .day-section {
@@ -63,9 +62,9 @@
         }
         .day-header {
             font-size: 1.4em;
-            color: #424242;
-            border-left: 6px solid #616161;
-            background: #eeeeee;
+            color: #c62828;
+            border-left: 6px solid #ef9a9a;
+            background: #ffecec;
             padding: 8px 14px;
             border-radius: 6px;
             margin: 20px 0 25px;
@@ -105,7 +104,7 @@
             margin-bottom: 10px;
         }
         .location a {
-            color: #424242;
+            color: #d32f2f;
             text-decoration: none;
         }
         .location a:hover {
@@ -114,15 +113,15 @@
 
         /* 항목별 스티커 박스 */
         .content-box {
-            background: #f5f5f5;
-            border-left: 5px solid #9e9e9e;
+            background: #fff8f8;
+            border-left: 5px solid #ef9a9a;
             border-radius: 6px;
             margin: 10px 0;
             padding: 10px 14px;
         }
         .content-title {
             display: inline-block;
-            background: #9e9e9e;
+            background: #ef9a9a;
             color: #fff;
             font-weight: 700;
             border-radius: 6px;
@@ -136,15 +135,15 @@
 
         /* Team Quest */
         .team-quest-box {
-            background: #eeeeee;
-            border-left: 5px solid #616161;
+            background: #ffecec;
+            border-left: 5px solid #e57373;
             border-radius: 6px;
             margin: 14px 0;
             padding: 12px 16px;
         }
         .team-quest-title {
             display: inline-block;
-            background: #616161;
+            background: #e57373;
             color: #fff;
             font-weight: 700;
             border-radius: 6px;
@@ -159,14 +158,14 @@
 
         details {
             margin-top: 14px;
-            border-left: 4px solid #bdbdbd;
-            background: #f0f0f0;
+            border-left: 4px solid #ef9a9a;
+            background: #fff0f0;
             padding: 10px 14px;
             border-radius: 6px;
         }
         summary {
             font-weight: 600;
-            color: #424242;
+            color: #d32f2f;
             cursor: pointer;
         }
         summary:hover {
@@ -191,12 +190,12 @@
     </head>
     <body>
     <header>
-        <h1>🗓️ MVP Global Experience – Tokyo Schedule</h1>
+        <h1>🌏 LG MVP Global Experience – Tokyo Schedule (TEAM 3)</h1>
     </header>
     <div class="tab-bar">
     <button id='btn-Day1' class='tab-button' onclick="showDay('Day1')">Day1</button><button id='btn-Day2' class='tab-button' onclick="showDay('Day2')">Day2</button><button id='btn-Day3' class='tab-button' onclick="showDay('Day3')">Day3</button></div><div class='day-section' id='Day1'><div class='day-header'>Day1</div>
             <div class="schedule-item">
-                <div class='region-label' style='background:#FFEBEE;color:#B71C1C;'>긴자</div>
+                <div class='region-label' style='background:#E0ECFF;color:#1E3A8A;'>긴자</div>
                 <div class="location-line">
                     <span class="location"><a href='https://maps.app.goo.gl/KH9hNdQsUjhkwrQC9' target='_blank'>Ginza Six</a></span> – 전통과 현대가 어우러진 럭셔리와 문화가 융합된 복합 쇼핑몰
                 </div>
@@ -227,7 +226,7 @@
                 </div>
                 </div>
             <div class="schedule-item">
-                <div class='region-label' style='background:#FFEBEE;color:#B71C1C;'>긴자</div>
+                <div class='region-label' style='background:#E0ECFF;color:#1E3A8A;'>긴자</div>
                 <div class="location-line">
                     <span class="location"><a href='https://maps.app.goo.gl/fJzv962iyUn8UaCg6' target='_blank'>Itoya Ginza</a></span> – 120년의 역사를 가진 고급화, 전문화된 문구 편집 숍
                 </div>
@@ -258,7 +257,7 @@
                 </div>
                 </div>
             <div class="schedule-item">
-                <div class='region-label' style='background:#E3F2FD;color:#1565C0;'>도쿄역</div>
+                <div class='region-label' style='background:#E8F5E9;color:#2E7D32;'>도쿄역</div>
                 <div class="location-line">
                     <span class="location"><a href='https://maps.app.goo.gl/ucFMDZuCue8jRHED6' target='_blank'>Dawn: Avatar Robot Cafe</a></span> – 사람과 기술을 잇는 새로운 일의 방식
                 </div>
@@ -289,7 +288,7 @@
                 </div>
                 <details><summary>🗒️ Note</summary><p>디너 좌석 예 (음료만 이용 시 예약없이 방문 가능): https://www.tablecheck.com/en/shops/dawncafe2021/reserve</p></details></div>
             <div class="schedule-item">
-                <div class='region-label' style='background:#E3F2FD;color:#1565C0;'>도쿄역</div>
+                <div class='region-label' style='background:#E8F5E9;color:#2E7D32;'>도쿄역</div>
                 <div class="location-line">
                     <span class="location"><a href='https://maps.app.goo.gl/GuzYk7gqs2BXSrYV7' target='_blank'>LOVOT</a></span> – 로봇의 정의를 바꾼 GROOVE X의 실험
                 </div>
@@ -382,7 +381,7 @@
                 </div>
                 </div></div><div class='day-section' id='Day2'><div class='day-header'>Day2</div>
             <div class="schedule-item">
-                <div class='region-label' style='background:#E8F5E9;color:#2E7D32;'>아자부다이</div>
+                <div class='region-label' style='background:#F3E5F5;color:#6A1B9A;'>아자부다이</div>
                 <div class="location-line">
                     <span class="location"><a href='https://maps.app.goo.gl/8FYRLe9ayFcnF7pE9' target='_blank'>teamLab Borderless</a></span> – 경계를 허무는 몰입형 디지털 아트
                 </div>
@@ -419,7 +418,7 @@ teamLab Borderless가 예술과 기술, 관람객과 작품의 경계를 무너�
                 </div>
                 </div>
             <div class="schedule-item">
-                <div class='region-label' style='background:#E8F5E9;color:#2E7D32;'>아자부다이</div>
+                <div class='region-label' style='background:#F3E5F5;color:#6A1B9A;'>아자부다이</div>
                 <div class="location-line">
                     <span class="location"><a href='https://maps.app.goo.gl/Zk2gXHjipy2xjiTP6' target='_blank'>Azabudai Hills</a></span> – 34년에 걸친 도시 재생의 마스터피스
                 </div>
@@ -457,7 +456,7 @@ teamLab Borderless가 예술과 기술, 관람객과 작품의 경계를 무너�
                 <details><summary>🗒️ Note</summary><p>
 아자부 힐즈 플로어 맵: https://platinumaps.jp/d/azabudaihills?culture=ko</p></details></div>
             <div class="schedule-item">
-                <div class='region-label' style='background:#F3E5F5;color:#6A1B9A;'>시부야</div>
+                <div class='region-label' style='background:#E1F5FE;color:#01579B;'>시부야</div>
                 <div class="location-line">
                     <span class="location"><a href='https://maps.app.goo.gl/9T6shKT1sYvcYTWf8' target='_blank'>Shibuya Tsutaya</a></span> – 문화와 취향이 교차하는 제안형 서점
                 </div>
@@ -515,7 +514,7 @@ teamLab Borderless가 예술과 기술, 관람객과 작품의 경계를 무너�
                 </div>
                 </div>
             <div class="schedule-item">
-                <div class='region-label' style='background:#F3E5F5;color:#6A1B9A;'>시부야</div>
+                <div class='region-label' style='background:#E1F5FE;color:#01579B;'>시부야</div>
                 <div class="location-line">
                     <span class="location"><a href='https://maps.app.goo.gl/rHqUC5x8ufGDm4ZTA' target='_blank'>Olive Lounge Shibuya</a></span> – 새로운 은행의 모습
                 </div>
@@ -570,7 +569,7 @@ Olive 고객만 이용 가능하다는 점에서 VIP 경험을 설계한 모습�
                 </div>
                 </div>
             <div class="schedule-item">
-                <div class='region-label' style='background:#F3E5F5;color:#6A1B9A;'>시부야</div>
+                <div class='region-label' style='background:#E1F5FE;color:#01579B;'>시부야</div>
                 <div class="location-line">
                     <span class="location"><a href='https://maps.app.goo.gl/VJVxGZmHZcjXqLfg7' target='_blank'>b8ta Tokyo</a></span> – 맞춤형 서비스의 가전 라이프관
                 </div>
@@ -595,7 +594,7 @@ Olive 고객만 이용 가능하다는 점에서 VIP 경험을 설계한 모습�
                     </div>
                     </div>
             <div class="schedule-item">
-                <div class='region-label' style='background:#F3E5F5;color:#6A1B9A;'>시부야</div>
+                <div class='region-label' style='background:#E1F5FE;color:#01579B;'>시부야</div>
                 <div class="location-line">
                     <span class="location"><a href='https://maps.app.goo.gl/TmkfQftx9i9hp1Et9' target='_blank'>BIC Camera</a></span> – 맞춤형 서비스의 가전 라이프관
                 </div>
@@ -620,7 +619,7 @@ Olive 고객만 이용 가능하다는 점에서 VIP 경험을 설계한 모습�
                     </div>
                     </div>
             <div class="schedule-item">
-                <div class='region-label' style='background:#F3E5F5;color:#6A1B9A;'>시부야</div>
+                <div class='region-label' style='background:#E1F5FE;color:#01579B;'>시부야</div>
                 <div class="location-line">
                     <span class="location"><a href='https://maps.app.goo.gl/h575m2pY7KnTnSNw6' target='_blank'>Pepper Parlor</a></span> – 로봇과 인간의 공존을 실증하는 미래형 서비스 플랫폼
                 </div>
@@ -651,7 +650,7 @@ Olive 고객만 이용 가능하다는 점에서 VIP 경험을 설계한 모습�
                 </div>
                 <details><summary>🗒️ Note</summary><p>실시간 좌석 에약: https://tabelog.com/kr/tokyo/A1303/A130301/13241764/table/</p></details></div>
             <div class="schedule-item">
-                <div class='region-label' style='background:#F3E5F5;color:#6A1B9A;'>시부야</div>
+                <div class='region-label' style='background:#E1F5FE;color:#01579B;'>시부야</div>
                 <div class="location-line">
                     <span class="location">MEGA DONKI Shibuya</span> – 
                 </div>
