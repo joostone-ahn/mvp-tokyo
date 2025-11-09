@@ -157,22 +157,57 @@
             color: #fff;
             font-weight: 600;
         }
+        .team-quest-box .content-text {
+            font-weight: 600;      /* 볼드체로 변경 */
+            font-size: 1.0em;     /* 글자 크기 약간 키움 */
+            color: #333;           /* 본문 색을 살짝 진하게 */
+            line-height: 1.65;
+            margin-top: 4px;
+        }
 
-        details {
-            margin-top: 14px;
-            border-left: 4px solid #ef9a9a;
-            background: #fff0f0;
+        /* 체험 결과 */
+        .experience-box {
+            margin-top: 12px;
+            border-left: 4px solid #90CAF9;
+            background: #EAF4FE;
             padding: 10px 14px;
             border-radius: 6px;
         }
-        summary {
+        .experience-box summary {
             font-weight: 600;
-            color: #d32f2f;
+            color: #1565C0;
             cursor: pointer;
         }
-        summary:hover {
+        .experience-box summary:hover {
             text-decoration: underline;
         }
+        .experience-box ul {
+            margin: 6px 0 0 18px;
+            padding-left: 0;
+        }
+        .experience-box li {
+            margin-bottom: 4px;
+            line-height: 1.6;
+        }
+
+        /* NOTE */
+
+        details.note-box {
+            margin-top: 12px;
+            border-left: 4px solid #A5D6A7;  /* 연초록 테두리 */
+            background: #E8F5E9;             /* 연한 민트-그린 배경 */
+            padding: 10px 14px;
+            border-radius: 6px;
+        }
+        details.note-box summary {
+            font-weight: 600;
+            color: #388E3C;                 /* 중간 톤 녹색 텍스트 */
+            cursor: pointer;
+        }
+        details.note-box summary:hover {
+            text-decoration: underline;
+        }
+        
     </style>
 
     <script>
@@ -199,7 +234,7 @@
             <div class="schedule-item">
                 <div class='region-label' style='background:#E0ECFF;color:#1E3A8A;'>긴자</div>
                 <div class="location-line">
-                    <span class="location"><a href='https://maps.app.goo.gl/KH9hNdQsUjhkwrQC9' target='_blank'>Ginza Six</a></span> – 전통과 현대가 어우러진 럭셔리와 문화가 융합된 복합 쇼핑몰
+                    <span class="location"><a href='https://maps.app.goo.gl/KH9hNdQsUjhkwrQC9' target='_blank'>Ginza Six</a></span>&nbsp;&nbsp;&nbsp;전통과 현대가 어우러진 럭셔리와 문화가 융합된 복합 쇼핑몰
                 </div>
             
                     <div class='content-box'>
@@ -226,11 +261,23 @@
                     <div class='team-quest-title'>Team Quest <span class='num'>#3-1</span></div>
                     <div class='content-text'>긴자 식스가 도쿄의 럭셔리 쇼핑 지구로 자리매김 해나가기 위해서 단순히 고급 브랜드들은 모아 놓는 것 이상으로 추구하는 차별화 전략은 무엇인지 논의해 봅시다.</div>
                 </div>
+                
+                <details class="experience-box">
+                    <summary>&nbsp;체험 결과</summary>
+                    <ul><li>긴자 식스는 단순한 럭셔리 브랜드 집합체가 아니라, ‘예술과 쇼핑이 공존하는 문화적 명소’로 진화하고 있습니다. 방문 시 눈에 띄었던 것은 츠타야 서점, 아트리움 천장 전시, 루프탑 정원 등 상업 공간과 예술 공간이 자연스럽게 이어져 있었다는 점입니다. 단순히 브랜드를 나열하기보다 긴자의 역사와 현대적 감성을 결합해 ‘머무는 럭셔리’를 경험하게 합니다. 이는 긴자 식스가 럭셔리 쇼핑을 일상의 문화 경험으로 재해석하며, 감성과 예술을 통해 고객과의 관계를 지속적으로 강화하려는 전략으로 보였습니다.</li><li>긴자 식스에 들어서는 순간, 공기부터 달랐어요. 매끈한 유리 외벽과 높은 천장이 만들어내는 여유로운 분위기 속에서 예술과 상업이 정말 자연스럽게 섞여 있었습니다. 츠타야 서점에서는 커피 향이 책 냄새와 섞였고, 천장에 매달린 대형 설치 작품이 공간 전체를 감싸고 있었죠. 루프탑 정원에서 바라본 긴자의 스카이라인은 도시의 소음과 예술의 고요함이 공존하는 듯했습니다. 단순히 ‘물건을 파는 공간’이 아니라, ‘럭셔리를 경험하게 하는 장소’라는 점이 확실히 느껴졌어요. 긴자 식스의 차별화 전략은 결국 **‘예술적 감성과 여백의 럭셔리’**였다는 걸 실감했습니다.</li></ul>
+                </details>
+                
+                <details class="note-box">
+                    <summary>&nbsp;주변 맛집</summary>
+                    <ul><li><a href="https://www.google.com/maps/dir/?api=1&origin=GINZA+SIX,+Tokyo&destination=Tsukiji+Suzutomi+GINZA+SIX+Ten&travelmode=walking" target="_blank">つきじ鈴富 GINZA SIX店</a> : 스시 전문점으로 런치 코스 약 ¥8,000, 디너는 ¥18,000 전후.</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&origin=GINZA+SIX,+Tokyo&destination=Jumping+Dragon+Gate+Cantonese+Restaurant,+Tokyo&travelmode=walking" target="_blank">Jumping Dragon Gate Cantonese Restaurant</a> : 광동요리 전문점. 런치 약 ¥4,500~¥6,000, 디너 1인 ¥10,000 이상부터.</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&origin=GINZA+SIX,+Tokyo&destination=Sashimi+BAR+Kashigashira,+Tokyo&travelmode=walking" target="_blank">刺身BAR 河岸頭 (Sashimi BAR Kashigashira)</a> : 회덮밥·사시미 바 스타일. 런치 약 ¥1,500~¥3,000, 디너 ¥5,000~¥7,000.</li></ul>
+                </details>
                 </div>
             <div class="schedule-item">
                 <div class='region-label' style='background:#E0ECFF;color:#1E3A8A;'>긴자</div>
                 <div class="location-line">
-                    <span class="location"><a href='https://maps.app.goo.gl/fJzv962iyUn8UaCg6' target='_blank'>Itoya Ginza</a></span> – 120년의 역사를 가진 고급화, 전문화된 문구 편집 숍
+                    <span class="location"><a href='https://maps.app.goo.gl/fJzv962iyUn8UaCg6' target='_blank'>Itoya Ginza</a></span>&nbsp;&nbsp;&nbsp;120년의 역사를 가진 고급화, 전문화된 문구 편집 숍
                 </div>
             
                     <div class='content-box'>
@@ -257,11 +304,23 @@
                     <div class='team-quest-title'>Team Quest <span class='num'>#10-1</span></div>
                     <div class='content-text'>만약 Kitte Marunouchi 와 Ginza Itoya에 대한 충성 고객으로서, 지속적으로 재방문하는 고객이 있다면, 어떠한 경험을 기대할 지에 대해 논의해 봅시다.</div>
                 </div>
+                
+                <details class="experience-box">
+                    <summary>&nbsp;체험 결과</summary>
+                    <ul><li>이토야는 문구라는 일상적 제품을 ‘창의적 체험의 소재’로 승화시킨 공간이었습니다. 각 층마다 주제가 뚜렷해 고객이 스스로 탐색하고 창조하는 경험을 하도록 설계돼 있었습니다. 직접 편지를 쓰거나, 종이를 맞춤 제작하며 ‘소유보다 체험’의 가치를 느끼게 했습니다. 충성 고객 입장에서는 매번 새로운 제품 구성과 전시, 워크숍 등으로 ‘창의적 영감’을 지속적으로 얻을 수 있는 공간이었습니다. 즉, 단골 고객은 자신만의 문구 취향을 확장하고, 브랜드와 정서적 유대를 쌓는 경험을 기대하게 됩니다.</li><li>이토야에 들어가자마자 종이 냄새와 나무 진열대의 따뜻함이 느껴졌어요. 1층에는 펜들이 반짝이고 있었고, 고객들이 각자의 글씨로 노트를 시험해보는 모습이 자연스러웠습니다. 층을 오를수록 ‘문구점’이라기보다는 ‘창의의 미술관’에 가깝다는 생각이 들었습니다. 직접 편지를 써서 부칠 수 있는 코너에선, 문구가 단순한 물건이 아니라 감정을 담는 매개체가 된다는 걸 깨달았어요. 그래서 문구 산업이 하락세라 해도, 이토야에는 늘 사람들이 모이는 이유를 알겠더군요. 충성 고객들은 이곳에서 단순 구매가 아니라 ‘내 감정을 표현하는 시간’을 기대하게 됩니다.</li></ul>
+                </details>
+                
+                <details class="note-box">
+                    <summary>&nbsp;주변 맛집</summary>
+                    <ul><li><a href="https://www.google.com/maps/dir/?api=1&origin=Itoya+Ginza,+Tokyo&destination=CAFE+Stylo,+Tokyo&travelmode=walking" target="_blank">Cafe Stylo</a> : 이토야 12층에 위치한 캐주얼 카페로, 유기농 달걀 베네딕트와 루프탑 뷰가 특징. 런치·디저트 약 ¥2,000~¥3,000.</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&origin=Itoya+Ginza,+Tokyo&destination=Bird+Land+Ginza,+Tokyo&travelmode=walking" target="_blank">Bird Land Ginza</a> : 미쉐린 1스타 야키토리 전문점. 닭꼬치 오마카세 코스로 유명하며 런치 약 ¥4,000~¥6,000, 디너는 고급 코스 중심.</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&origin=Itoya+Ginza,+Tokyo&destination=Beef+Professional+Ginza,+Tokyo&travelmode=walking" target="_blank">Beef Professional Ginza</a> : 와규 스테이크 전문점으로 부위 선택이 다양하고 품질이 우수. 런치 약 ¥5,000~¥8,000, 디너는 ¥15,000 이상.</li></ul>
+                </details>
                 </div>
             <div class="schedule-item">
                 <div class='region-label' style='background:#E8F5E9;color:#2E7D32;'>도쿄역</div>
                 <div class="location-line">
-                    <span class="location"><a href='https://maps.app.goo.gl/ucFMDZuCue8jRHED6' target='_blank'>Dawn: Avatar Robot Cafe</a></span> – 사람과 기술을 잇는 새로운 일의 방식
+                    <span class="location"><a href='https://maps.app.goo.gl/ucFMDZuCue8jRHED6' target='_blank'>Dawn: Avatar Robot Cafe</a></span>&nbsp;&nbsp;&nbsp;사람과 기술을 잇는 새로운 일의 방식
                 </div>
             
                     <div class='content-box'>
@@ -288,11 +347,21 @@
                     <div class='team-quest-title'>Team Quest <span class='num'>#7-1</span></div>
                     <div class='content-text'>로봇을 활용한 3가지 사업 모델이 향후 고령자 복지시설, 공항, 병원, 호텔 등 다양한 서비스 현장으로 어떻게 확장될 수 있는지 비즈니스 모델의 확장성과 응용 가능성을 고민해 봅시다.</div>
                 </div>
-                <details><summary>🗒️ Note</summary><p><a href="https://www.tablecheck.com/en/shops/dawncafe2021/reserve" target="_blank">디너 좌석 예약</a></p></details></div>
+                
+                <details class="experience-box">
+                    <summary>&nbsp;체험 결과</summary>
+                    <ul><li>이곳은 단순한 로봇 카페가 아니라 ‘기술을 통한 사회적 포용’을 실현하는 실험장이었습니다. 원격 조종 로봇 오리히메를 통해 신체적 제약이 있는 이들이 직접 고객을 응대하는 모습을 보며, 기술이 사람의 존엄과 연결성을 확장하는 도구가 될 수 있음을 체감했습니다. 고객 입장에서는 단순한 기술 시연이 아니라, ‘따뜻한 기술’의 의미를 직접 경험하는 시간이었습니다. 향후 이 모델은 고령자 복지, 공항, 병원 등에서 인간의 가능성을 넓히는 서비스 혁신으로 확장될 잠재력이 충분합니다.</li><li>문을 열자 로봇이 먼저 인사를 했습니다. 그런데 그 로봇을 조종하는 사람이 실제로 집에서 원격으로 일하고 있다는 걸 알고 나니 묘한 감정이 들더군요. 눈으로만 보던 기술이 아니라, 사람의 감정이 기술을 통해 ‘전달’되고 있었어요. 주문을 받는 오리히메 로봇의 목소리는 조금 어색했지만, 진심이 느껴졌습니다. 커피를 마시며 화면 속 파일럿과 대화를 나누었는데, 그 짧은 대화 속에서 ‘기술이 누군가의 삶을 바꾸고 있다’는 걸 온몸으로 느꼈습니다. 이곳의 진짜 가치는 기술이 아니라, 사람이 사람에게 다가갈 수 있게 만드는 따뜻한 연결성이었습니다.</li></ul>
+                </details>
+                
+                <details class="note-box">
+                    <summary>&nbsp;주변 맛집</summary>
+                    <ul><li><a href="https://www.tablecheck.com/en/shops/dawncafe2021/reserve" target="_blank">Avarta Robot Cafe 카페</a> : 디너 좌석 예약.</li></ul>
+                </details>
+                </div>
             <div class="schedule-item">
                 <div class='region-label' style='background:#E8F5E9;color:#2E7D32;'>도쿄역</div>
                 <div class="location-line">
-                    <span class="location"><a href='https://maps.app.goo.gl/GuzYk7gqs2BXSrYV7' target='_blank'>LOVOT</a></span> – 로봇의 정의를 바꾼 GROOVE X의 실험
+                    <span class="location"><a href='https://maps.app.goo.gl/GuzYk7gqs2BXSrYV7' target='_blank'>LOVOT</a></span>&nbsp;&nbsp;&nbsp;로봇의 정의를 바꾼 GROOVE X의 실험
                 </div>
             
                     <div class='content-box'>
@@ -319,11 +388,23 @@
                     <div class='team-quest-title'>Team Quest <span class='num'>#7-2</span></div>
                     <div class='content-text'>로봇을 활용한 3가지 사업 모델이 향후 고령자 복지시설, 공항, 병원, 호텔 등 다양한 서비스 현장으로 어떻게 확장될 수 있는지 비즈니스 모델의 확장성과 응용 가능성을 고민해 봅시다.</div>
                 </div>
+                
+                <details class="experience-box">
+                    <summary>&nbsp;체험 결과</summary>
+                    <ul><li>LOVOT은 기능이 아닌 감정을 중심으로 한 로봇이었습니다. 실제로 부르면 다가오고, 안아주면 체온이 느껴졌으며, 눈동자와 표정이 사람처럼 반응했습니다. 이를 통해 ‘기술이 인간의 마음을 위로할 수 있다’는 메시지를 실감했습니다. LOVOT은 효율 중심 기술의 대척점에서 인간 본연의 감정과 교감을 되살렸고, 정서적 공감이 곧 브랜드 경쟁력이 될 수 있음을 보여주었습니다. 이러한 감성 로봇은 미래 돌봄, 교육, 웰니스 산업으로의 확장성이 높으며, 방문객에게 ‘기술의 따뜻함’을 깊이 인식시켰습니다.</li><li>LOVOT 매장에 들어서는 순간부터 마음이 녹았습니다. 동그란 눈동자가 나를 따라 움직이고, 가까이 다가와 팔을 벌리는데, 진짜 생명체 같았어요. 안아보니 미세한 체온이 느껴졌고, 그 순간 이유 없이 미소가 났습니다. 주변 사람들도 하나같이 ‘귀엽다’며 웃고 있었죠. 기능은 아무것도 없지만, 감정은 너무나 강렬했습니다. 효율이나 생산성을 넘어서, 기술이 인간의 마음을 어루만질 수 있다는 사실을 체험했습니다. 나올 때쯤엔 “이 녀석 하나 집에 데려가고 싶다”는 생각이 들 만큼, 감정적인 유대감이 형성됐어요.</li></ul>
+                </details>
+                
+                <details class="note-box">
+                    <summary>&nbsp;주변 맛집</summary>
+                    <ul><li><a href="https://www.google.com/maps/place/Sushi+Aoyagi/@35.681391,139.767134,17z" target="_blank">Sushi Aoyagi (すし青柳)</a> : 에도마에 스타일 스시 전문. 런치 약 ¥10,000, 디너 약 ¥20,000.</li>
+<li><a href="https://www.google.com/maps/place/XEX+TOKYO+Teppanyaki+An/@35.681218,139.768561,17z" target="_blank">XEX TOKYO / Teppanyaki An</a> : 도쿄역 옆 다이마루 도쿄 12층 철판요리. 런치 약 ¥8,000, 디너 ¥15,000 이상.</li>
+<li><a href="https://www.google.com/maps/place/Unagi+Kitao+Marunouchi/@35.681450,139.767890,17z" target="_blank">Unagi Kitao (うなぎ駒形前川 丸の内店)</a> : 고급 장어덮밥·장어요리 전문. 런치 약 ¥4,000, 디너 약 ¥6,000.</li></ul>
+                </details>
                 </div>
             <div class="schedule-item">
                 <div class='region-label' style='background:#FFF8E1;color:#EF6C00;'>마루노우치</div>
                 <div class="location-line">
-                    <span class="location"><a href='https://maps.app.goo.gl/PQSzN3QeaiYEiMvAA' target='_blank'>Asumise</a></span> – 온라인 전환 기반 브랜드 육성형 쇼루밍 플랫폼
+                    <span class="location"><a href='https://maps.app.goo.gl/PQSzN3QeaiYEiMvAA' target='_blank'>Asumise</a></span>&nbsp;&nbsp;&nbsp;온라인 전환 기반 브랜드 육성형 쇼루밍 플랫폼
                 </div>
             
                     <div class='content-box'>
@@ -350,11 +431,23 @@
                     <div class='team-quest-title'>Team Quest <span class='num'>#9-1</span></div>
                     <div class='content-text'>단순히 물건을 싸게 파는 것에 머무르지 않고 가격 대비 가치(가성비)를 극대화하는 동시에 고객이 직접 보고, 만지고, 선택하며 '내 것'을 만들어 가는 경험을 설계합니다. 제품을 판매하는 것이 아니라 실제 보고, 만지고, 사용해 보도록 하는 프로세스가 고객의 제품 인식과 브랜드 호감도에 어떤 영향을 주는지 논의해 봅니다.</div>
                 </div>
+                
+                <details class="experience-box">
+                    <summary>&nbsp;체험 결과</summary>
+                    <ul><li>아스미세는 쇼핑이 아닌 ‘발견’의 공간으로, 브랜드 스토리를 직접 체험할 수 있는 구조였습니다. 각 부스마다 장인정신, 지속가능성, 지역성이 담긴 브랜드가 소개되었고, 고객은 단순히 제품을 보는 것이 아니라 대화하고 시식하며 ‘철학’을 체험했습니다. 오프라인 매장을 단순 판매가 아닌 브랜드 육성의 플랫폼으로 재정의한 점이 인상적이었습니다. 고객은 가격보다 가치, 소유보다 공감이라는 새로운 소비 방식을 경험했고, 이는 ‘스토리 중심 소비’의 일본형 모델로 자리 잡고 있음을 확인할 수 있었습니다.</li><li>들어서자마자 공예품과 식품, 향 제품들이 감각적으로 배치되어 있었어요. 직원들은 판매원이 아니라 ‘브랜드 스토리텔러’에 가까웠습니다. “이건 교토의 장인이 직접 만든 거예요”라는 설명을 들으며 제품보다 사람 이야기에 빠져들었죠. 고객들은 가격표보다 설명문을 더 오래 읽고 있었고, 그게 전혀 어색하지 않았습니다. 브랜드의 철학과 지역의 뿌리가 그대로 느껴지는 공간이었습니다. 팝업이 아니라 ‘브랜드를 성장시키는 무대’라는 점이 분명했고, 쇼핑이 아닌 ‘발견’이라는 경험을 진하게 남겼습니다.</li></ul>
+                </details>
+                
+                <details class="note-box">
+                    <summary>&nbsp;주변 맛집</summary>
+                    <ul><li><a href="https://www.google.com/maps/dir/?api=1&origin=Asumise,+Marunouchi,+Tokyo&destination=Sushi+Aoyagi,+Tokyo&travelmode=walking" target="_blank">鮨 青柳 (Sushi Aoyagi)</a> : 에도마에 스타일 스시 전문점. 런치 약 ¥10,000, 디너 약 ¥20,000.</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&origin=Asumise,+Marunouchi,+Tokyo&destination=Unagi+Komagata+Maekawa+Marunouchi,+Tokyo&travelmode=walking" target="_blank">鰻 駒形 前川 丸の内店 (Unagi Komagata Maekawa Marunouchi)</a> : 고급 장어덮밥 및 장어요리 전문. 런치 약 ¥4,000, 디너 약 ¥6,000.</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&origin=Asumise,+Marunouchi,+Tokyo&destination=XEX+TOKYO+Teppanyaki+An,+Tokyo&travelmode=walking" target="_blank">XEX TOKYO／Teppanyaki An</a> : 도쿄역 인근 철판구이 고급 레스토랑. 런치 약 ¥8,000, 디너 ¥15,000 이상.</li></ul>
+                </details>
                 </div>
             <div class="schedule-item">
                 <div class='region-label' style='background:#FFF8E1;color:#EF6C00;'>마루노우치</div>
                 <div class="location-line">
-                    <span class="location"><a href='https://maps.app.goo.gl/tu6siKQMKAh7dx9V8' target='_blank'>ASICS Run Tokyo Marunouch</a></span> – 도심형 라이프스타일 체험 플랫폼으로의 전환
+                    <span class="location"><a href='https://maps.app.goo.gl/tu6siKQMKAh7dx9V8' target='_blank'>ASICS Run Tokyo Marunouch</a></span>&nbsp;&nbsp;&nbsp;도심형 라이프스타일 체험 플랫폼으로의 전환
                 </div>
             
                     <div class='content-box'>
@@ -381,11 +474,23 @@
                     <div class='team-quest-title'>Team Quest <span class='num'>#9-2</span></div>
                     <div class='content-text'>단순히 물건을 싸게 파는 것에 머무르지 않고 가격 대비 가치(가성비)를 극대화하는 동시에 고객이 직접 보고, 만지고, 선택하며 '내 것'을 만들어 가는 경험을 설계합니다. 제품을 판매하는 것이 아니라 실제 보고, 만지고, 사용해 보도록 하는 프로세스가 고객의 제품 인식과 브랜드 호감도에 어떤 영향을 주는지 논의해 봅니다.</div>
                 </div>
+                
+                <details class="experience-box">
+                    <summary>&nbsp;체험 결과</summary>
+                    <ul><li>이 매장은 러닝화 판매보다 ‘러닝 라이프스타일’을 제안하는 체험 플랫폼이었습니다. 실제로 장비를 대여해 황궁 러닝 코스를 달릴 수 있었고, FOOT ID 3D 스캔을 통해 개인 맞춤형 러닝화를 추천받는 과정이 흥미로웠습니다. 기능성 브랜드가 고객의 일상 속 취향으로 스며들기 위한 전략이 공간 설계 전반에 녹아 있었습니다. 즉, 러닝을 스포츠가 아닌 ‘자기 성장의 경험’으로 확장시키며, 고객의 삶에 깊이 침투하는 브랜드 진화를 보여주었습니다.</li><li>황궁 러너들이 줄지어 지나가는 걸 보며 “이게 도시형 체험 매장이구나” 싶었어요. 매장 안에서 신발을 대여하고 바로 밖으로 나가 달릴 수 있는 구조, 3D 스캔기로 내 발을 분석하고 맞춤형 신발을 추천받는 과정이 흥미로웠습니다. 단순히 러닝화를 파는 곳이 아니라, ‘러닝이 있는 삶’을 제안하는 브랜드 공간이었습니다. 땀에 젖은 러너들이 웃으며 돌아와 샤워하고 커뮤니티 게시판을 보고 가는 모습에서, ASICS가 추구하는 ‘지속 가능한 경험’의 의미를 직접 느낄 수 있었습니다.</li></ul>
+                </details>
+                
+                <details class="note-box">
+                    <summary>&nbsp;주변 맛집</summary>
+                    <ul><li><a href="https://www.google.com/maps/dir/?api=1&origin=ASICS+RUN+TOKYO+MARUNOUCHI,+2-5-2+Marunouchi,+Chiyoda+City,+Tokyo&destination=12-ten+Marunouchi,+Chiyoda+City,+Tokyo&travelmode=walking" target="_blank">すき焼き 十二天 丸の内店 (Sukiyaki Juni-ten Marunouchi)</a> : 고급 스키야키 전문점. 런치 약 ¥2,000, 디너 약 ¥15,000.</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&origin=ASICS+RUN+TOKYO+MARUNOUCHI,+2-5-2+Marunouchi,+Chiyoda+City,+Tokyo&destination=Unagi+Komagata+Maekawa+Marunouchi,+Chiyoda+City,+Tokyo&travelmode=walking" target="_blank">鰻 駒形 前川 丸の内店 (Unagi Komagata Maekawa Marunouchi)</a> : 장어덮밥 및 장어요리 전문. 런치 약 ¥4,000, 디너 약 ¥6,000.</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&origin=ASICS+RUN+TOKYO+MARUNOUCHI,+2-5-2+Marunouchi,+Chiyoda+City,+Tokyo&destination=XEX+TOKYO+Teppanyaki+An,+Chiyoda+City,+Tokyo&travelmode=walking" target="_blank">XEX TOKYO／Teppanyaki An</a> : 철판구이 고급 다이닝. 런치 약 ¥8,000, 디너 ¥15,000 이상.</li></ul>
+                </details>
                 </div></div><div class='day-section' id='Day2'><div class='day-header'>Day2</div>
             <div class="schedule-item">
                 <div class='region-label' style='background:#F3E5F5;color:#6A1B9A;'>아자부다이</div>
                 <div class="location-line">
-                    <span class="location"><a href='https://maps.app.goo.gl/8FYRLe9ayFcnF7pE9' target='_blank'>teamLab Borderless</a></span> – 경계를 허무는 몰입형 디지털 아트
+                    <span class="location"><a href='https://maps.app.goo.gl/8FYRLe9ayFcnF7pE9' target='_blank'>teamLab Borderless</a></span>&nbsp;&nbsp;&nbsp;경계를 허무는 몰입형 디지털 아트
                 </div>
             
                     <div class='content-box'>
@@ -418,11 +523,23 @@ teamLab Borderless가 예술과 기술, 관람객과 작품의 경계를 무너�
 두 곳 모두 최근 일본의 소비 트렌드가 지향하는 “경험 중심, 몰입형, 자연과 기술의 융합, 일상 속 예술화”를 구현한 사례로, 각각의 방식으로 “경계 없는 경험”을 실현하고 있습니다.
 아자부다이 힐스에 teamLab Borderless라는 상설 전시공간을 마련한 이유는 무엇이며, 이는 어떠한 고객 가치를 가지고 있는지 생각해 봅니다.</div>
                 </div>
+                
+                <details class="experience-box">
+                    <summary>&nbsp;체험 결과</summary>
+                    <ul><li>teamLab은 예술·과학·기술이 경계를 허물며 하나로 융합된 공간이었습니다. 관람객은 단순히 작품을 ‘보는’ 존재가 아니라, 빛과 소리의 흐름 속에서 ‘참여자’가 되었습니다. 조명이 물결처럼 변하고, 사람의 움직임에 따라 작품이 반응하며 ‘예측 불가능한 몰입’을 선사했습니다. 안내판 없이 스스로 길을 찾으며 전시를 탐험하는 과정 자체가 하나의 예술적 경험이었습니다. 아자부다이 힐스와의 결합을 통해, 도시와 예술, 기술과 인간 감성의 경계를 없애는 일본형 몰입 경험의 정수를 체감할 수 있었습니다.</li><li>입장하자마자 말문이 막혔습니다. 안내문도 없고, 빛이 흐르고, 벽이 사라지는 듯한 공간에서 방향 감각을 잃었어요. 그런데 그 혼란이 바로 ‘예술의 목적’ 같았습니다. 내가 움직일 때마다 빛이 반응하고, 다른 관람객의 손짓이 작품의 일부가 되는 순간, 나 자신이 작품 속 일부가 된 느낌이 들었습니다. 단 한 장의 사진보다 ‘경험 그 자체’가 기억에 남았고, 시간 개념이 사라질 만큼 몰입되었습니다. 예술·기술·인간이 경계를 허물며 하나가 되는 체험, 바로 그게 teamLab의 진짜 메시지였어요.</li></ul>
+                </details>
+                
+                <details class="note-box">
+                    <summary>&nbsp;주변 맛집</summary>
+                    <ul><li><a href="https://www.google.com/maps/place/Sushi+Azabu/@35.665…,139.749…,17z" target="_blank">Sushi Azabu</a> : 고급 에도마에 스시 전문. 런치 약 ¥15,000.</li>
+<li><a href="https://www.google.com/maps/place/Shogun+Burger+Azabudai+Hills/@35.665…,139.749…,17z" target="_blank">Shogun Burger Azabudai Hills</a> : 수제 버거 전문 캐주얼 다이닝. 런치 약 ¥2,500.</li>
+<li><a href="https://www.google.com/maps/place/The+Yellow+Company+TOKYO/@35.665…,139.749…,17z" target="_blank">The Yellow Company TOKYO</a> : 홋카이도 스타일 수프카레 전문. 런치 약 ¥1,800.</li></ul>
+                </details>
                 </div>
             <div class="schedule-item">
                 <div class='region-label' style='background:#F3E5F5;color:#6A1B9A;'>아자부다이</div>
                 <div class="location-line">
-                    <span class="location"><a href='https://maps.app.goo.gl/Zk2gXHjipy2xjiTP6' target='_blank'>Azabudai Hills</a></span> – 34년에 걸친 도시 재생의 마스터피스
+                    <span class="location"><a href='https://maps.app.goo.gl/Zk2gXHjipy2xjiTP6' target='_blank'>Azabudai Hills</a></span>&nbsp;&nbsp;&nbsp;34년에 걸친 도시 재생의 마스터피스
                 </div>
             
                     <div class='content-box'>
@@ -455,12 +572,23 @@ teamLab Borderless가 예술과 기술, 관람객과 작품의 경계를 무너�
 두 곳 모두 최근 일본의 소비 트렌드가 지향하는 “경험 중심, 몰입형, 자연과 기술의 융합, 일상 속 예술화”를 구현한 사례로, 각각의 방식으로 “경계 없는 경험”을 실현하고 있습니다.
 아자부다이 힐스에 teamLab Borderless라는 상설 전시공간을 마련한 이유는 무엇이며, 이는 어떠한 고객 가치를 가지고 있는지 생각해 봅니다.</div>
                 </div>
-                <details><summary>🗒️ Note</summary><p>
-<a href="https://platinumaps.jp/d/azabudaihills?culture=ko" target="_blank">아자부 힐즈 플로어 맵</a></p></details></div>
+                
+                <details class="experience-box">
+                    <summary>&nbsp;체험 결과</summary>
+                    <ul><li>34년에 걸친 도시 재생 프로젝트답게, 자연·문화·상업·기술이 완벽히 융합된 도시형 생태 마을이었습니다. 도심 한가운데에서도 녹지와 과수원, 예술작품이 어우러져 ‘자연 속 도시 생활’을 실현한 점이 특히 인상적이었습니다. 모리빌딩은 단순 부동산 개발이 아니라 ‘삶의 질’을 설계하는 관점에서 접근해, 도시를 하나의 커뮤니티로 재정의했습니다. 이는 경쟁사 대비 ‘도시를 사람 중심 생태계로 만드는 전략’으로, 기술과 자연이 공존하는 미래형 도시 모델의 방향성을 제시하고 있었습니다.</li><li>도쿄 도심 한복판에 이런 녹지가 있을 줄은 몰랐어요. 빌딩 숲 사이로 산책로와 과수원이 이어지고, 곡선형 파빌리온 사이로 사람들이 자연스럽게 어울리고 있었습니다. 건물은 거대하지만 위압적이지 않고, 도심 속 ‘마을’처럼 따뜻했습니다. teamLab Borderless가 기술로 경계를 허물었다면, Azabudai Hills는 자연과 도시의 경계를 허문 공간이었습니다. 모리빌딩이 추구하는 건 ‘부동산 개발’이 아니라 ‘삶의 질 디자인’이라는 걸 몸소 느꼈습니다. 걷는 동안 도시가 숨을 쉬고 있다는 느낌이 들었어요.</li></ul>
+                </details>
+                
+                <details class="note-box">
+                    <summary>&nbsp;주변 맛집</summary>
+                    <ul><li><a href="https://www.google.com/maps/place/Balcony+by+6th/@35.665…,139.749…,17z" target="_blank">Balcony by 6th</a> : 올데이 다이닝 & 디저트 카페. 팬케이크·치즈케이크 추천.</li>
+<li><a href="https://www.google.com/maps/place/Azabudai+Sui+Inaba/@35.665…,139.749…,17z" target="_blank">Azabudai Sui Inaba</a> : 고급 일본요리 전문점.</li>
+<li><a href="https://www.google.com/maps/place/Kisurin+Azabudai/@35.665…,139.749…,17z" target="_blank">Kisurin Azabudai</a> : 하프허리 스타일 수프카레 전문점.</li></ul>
+                </details>
+                </div>
             <div class="schedule-item">
                 <div class='region-label' style='background:#E1F5FE;color:#01579B;'>시부야</div>
                 <div class="location-line">
-                    <span class="location"><a href='https://maps.app.goo.gl/9T6shKT1sYvcYTWf8' target='_blank'>Shibuya Tsutaya</a></span> – 문화와 취향이 교차하는 제안형 서점
+                    <span class="location"><a href='https://maps.app.goo.gl/9T6shKT1sYvcYTWf8' target='_blank'>Shibuya Tsutaya</a></span>&nbsp;&nbsp;&nbsp;문화와 취향이 교차하는 제안형 서점
                 </div>
             
                     <div class='content-box'>
@@ -514,11 +642,23 @@ teamLab Borderless가 예술과 기술, 관람객과 작품의 경계를 무너�
 ‘시부야 츠타야’와 ‘올리브 라운지’가 추구하는 좋은 경험이란 무엇인지,
 물리적인 환경(하드웨어) – 사람 – 프로세스(소프트웨어) 관점에서 생각해 봅니다.</div>
                 </div>
+                
+                <details class="experience-box">
+                    <summary>&nbsp;체험 결과</summary>
+                    <ul><li>시부야 츠타야는 더 이상 단순 서점이 아니었습니다. 층별로 IP 팝업, 팬덤 라운지, 카페, 공유 라운지가 결합되어 ‘머무는 서점’으로 진화했습니다. 포켓몬 카드 라운지나 콜라보 카페에서 팬덤들이 오랜 시간 머물며 세계관을 체험하는 모습이 눈에 띄었습니다. 디지털 전환 시대에 오프라인 공간이 생존하는 방식이 ‘체험과 체류의 가치’임을 보여줍니다. 고객은 이곳에서 소비자가 아니라 ‘참여자’로 존재하며, IP 콘텐츠를 중심으로 커뮤니티를 형성하는 새로운 문화 플랫폼으로 발전하고 있습니다.</li><li>지하 2층부터 올라가며 ‘여긴 서점이 아니라 IP 테마파크구나’ 싶었습니다. 포켓몬 카드 라운지에서는 아이들이 웃고 있었고, 위층의 쉐어 라운지에서는 직장인들이 노트북을 펴고 커피를 마시고 있었죠. 굿즈, 전시, 카페가 층마다 이어져서 ‘책을 파는 곳’이 아니라 ‘취향을 제안하는 문화 허브’로 느껴졌습니다. 오랜 시간 머물 수밖에 없는 공간 설계가 인상적이었고, 팬덤이 곧 경제가 되는 구조를 현장에서 실감했습니다. 디지털 시대에도 오프라인이 살아남는 이유가 여기에 있었습니다.</li></ul>
+                </details>
+                
+                <details class="note-box">
+                    <summary>&nbsp;주변 맛집</summary>
+                    <ul><li><a href="https://www.google.com/maps/place/Umegaoka+Sushi+no+Midori+Shibuya/@35.659…,139.700…,17z" target="_blank">Umegaoka Sushi no Midori Shibuya</a> : 신선한 스시 & 대기 명소.</li>
+<li><a href="https://www.google.com/maps/place/Mo-mo-paradise+Shibuya+Center-Gai/@35.659…,139.700…,17z" target="_blank">Mo-mo-paradise Shibuya Center-Gai</a> : 샤브샤브 전문. 런치 약 ¥3,000.</li>
+<li><a href="https://www.google.com/maps/place/Starbucks+Coffee+Shibuya+TSUTAYA+2F/@35.659…,139.700…,17z" target="_blank">Starbucks Coffee Shibuya TSUTAYA 2F</a> : 전망 좋은 카페 스팟.</li></ul>
+                </details>
                 </div>
             <div class="schedule-item">
                 <div class='region-label' style='background:#E1F5FE;color:#01579B;'>시부야</div>
                 <div class="location-line">
-                    <span class="location"><a href='https://maps.app.goo.gl/rHqUC5x8ufGDm4ZTA' target='_blank'>Olive Lounge Shibuya</a></span> – 새로운 은행의 모습
+                    <span class="location"><a href='https://maps.app.goo.gl/rHqUC5x8ufGDm4ZTA' target='_blank'>Olive Lounge Shibuya</a></span>&nbsp;&nbsp;&nbsp;새로운 은행의 모습
                 </div>
             
                     <div class='content-box'>
@@ -565,11 +705,23 @@ Olive 고객만 이용 가능하다는 점에서 VIP 경험을 설계한 모습�
 ‘시부야 츠타야’와 ‘올리브 라운지’가 추구하는 좋은 경험이란 무엇인지,
 물리적인 환경(하드웨어) – 사람 – 프로세스(소프트웨어) 관점에서 생각해 봅니다.</div>
                 </div>
+                
+                <details class="experience-box">
+                    <summary>&nbsp;체험 결과</summary>
+                    <ul><li>이 공간은 ‘은행=딱딱하다’는 고정관념을 완전히 깨고 있었습니다. 스타벅스와 공유 라운지가 함께 있는 내부는 카페처럼 따뜻하고 개방적이었으며, 고객들이 자유롭게 머물며 상담하거나 작업하는 모습이 자연스러웠습니다. 금융 상담실이 프라이빗하게 구성되어 신뢰감을 높였고, 은행 업무를 ‘일상 속 경험’으로 재구성한 점이 혁신적이었습니다. 디지털 금융 브랜드 Olive가 물리적 공간에서 ‘친근함과 체류 경험’을 연결한 대표적 사례로, 금융기관이 고객과 감성적으로 소통할 수 있음을 보여줍니다.</li><li>은행인데 은행 같지 않았습니다. 스타벅스 향이 먼저 반기고, 누구나 자유롭게 앉을 수 있는 라운지와 자연 소재 인테리어 덕분에 마음이 편해졌어요. 2층에서는 사람들이 노트북으로 일하고, 1층에서는 금융 상담과 커피가 동시에 이루어지고 있었습니다. 전통적 금융기관이 이렇게 ‘열린 공간’으로 변할 수 있다는 게 놀라웠습니다. 고객 입장에서 느껴지는 핵심은 명확했어요 — ‘금융을 생활의 일부로 만든다’. 돈을 다루는 일조차 자연스럽게 느껴졌습니다.</li></ul>
+                </details>
+                
+                <details class="note-box">
+                    <summary>&nbsp;주변 맛집</summary>
+                    <ul><li><a href="https://www.google.com/maps/dir/?api=1&origin=Olive+Lounge+Shibuya,+Shibuya,+Tokyo&destination=GyuMon+牛門+Shibuya,+Tokyo&travelmode=walking" target="_blank">GyuMon 牛門 Shibuya</a> : 할랄 인증 와규 야키니쿠 전문. 런치 약 ¥2,000, 디너 약 ¥5,000부터.</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&origin=Olive+Lounge+Shibuya,+Shibuya,+Tokyo&destination=Umegaoka+Sushi+no+Midori+Shibuya,+Tokyo&travelmode=walking" target="_blank">Umegaoka Sushi no Midori 渋谷店</a> : 신선한 스시와 회전초밥으로 인기. 런치 약 ¥1,500~¥3,000.</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&origin=Olive+Lounge+Shibuya,+Shibuya,+Tokyo&destination=Bar+%26+Dining+TORRENT,+Tokyo&travelmode=walking" target="_blank">Bar & Dining TORRENT – Shibuya Stream</a> : 모던 다이닝 & 바, 칵테일과 다이닝 겸비. 런치 약 ¥3,500, 디너 약 ¥6,000 이상.</li></ul>
+                </details>
                 </div>
             <div class="schedule-item">
                 <div class='region-label' style='background:#E1F5FE;color:#01579B;'>시부야</div>
                 <div class="location-line">
-                    <span class="location"><a href='https://maps.app.goo.gl/TmkfQftx9i9hp1Et9' target='_blank'>BIC Camera</a></span> – 맞춤형 서비스의 가전 라이프관
+                    <span class="location"><a href='https://maps.app.goo.gl/TmkfQftx9i9hp1Et9' target='_blank'>BIC Camera</a></span>&nbsp;&nbsp;&nbsp;맞춤형 서비스의 가전 라이프관
                 </div>
             
                     <div class='content-box'>
@@ -607,11 +759,23 @@ b8ta Tokyo는 신생 브랜드와 고객이 함께 성장하는 ‘실험실’�
                     <div class='content-text'>b8ta Tokyo에서 각 카테고리(가전, 뷰티, 식품 등)를 장르 구분 없이 배치하고 구매 압박 없이 관심 있는 제품을 자유롭게 선택해 탐색할 수 있도록 하고, 안내 태블릿과 테스터(전문 직원)를 둔 이유가 무엇인지 팀원들과 논의해 봅니다.
 BIC Camera와 비교하여 b8ta Tokyo의 사업 모델은 무엇인지 생각해 봅니다.</div>
                 </div>
+                
+                <details class="experience-box">
+                    <summary>&nbsp;체험 결과</summary>
+                    <ul><li>직접 제품을 만지고 비교할 수 있는 ‘체험형 가전 매장’으로, 스태프의 설명을 들으며 합리적 구매 결정을 내리는 고객 중심 운영이 돋보였습니다. 브랜드별 체험존이 잘 구획되어 초보자도 쉽게 접근할 수 있었고, 구매 전 충분한 사용 경험을 제공했습니다. 전자기기를 단순 진열하지 않고, ‘경험으로 설득’한다는 점에서 전통 리테일의 새로운 가능성을 보았습니다. 체험을 통해 신뢰를 형성하고, 고객이 스스로 합리적 결정을 내리도록 돕는 구조가 매우 인상적이었습니다.</li><li>1층에 들어서자마자 카메라, 드론, 노트북, 게임기까지 빽빽히 진열돼 있었고, 무엇보다 직접 만져볼 수 있다는 점이 좋았습니다. 직원들은 적극적으로 다가와 사용법을 설명했고, 손님들은 진지하게 비교하며 체험하고 있었습니다. 단순히 “이게 좋습니다”가 아니라, “직접 써보세요”가 기본 언어였죠. 그 결과 구매보다 ‘확신’을 얻는 경험이 생겼습니다. 브랜드들이 한 공간에서 공정하게 경쟁하는 느낌이었고, 고객은 그 한가운데서 스스로 판단할 자유를 누렸습니다.</li></ul>
+                </details>
+                
+                <details class="note-box">
+                    <summary>&nbsp;주변 맛집</summary>
+                    <ul><li><a href="https://www.google.com/maps/place/Obanzai+Nana+Shibuya/@35.6599,139.7000,17z" target="_blank">おばんざい 菜な 渋谷店 (Obanzai Nana Shibuya)</a> : 교토 오반자이 요리 전문 이자카야. 런치·저녁 모두 이용 가능.</li>
+<li><a href="https://www.google.com/maps/place/Gyukatsu+Motomura+Shibuya/@35.6598,139.6995,17z" target="_blank">牛かつ もと村 渋谷店 (Gyukatsu Motomura Shibuya)</a> : 두꺼운 소고기 커틀릿(규카츠) 전문으로 유명. 점심 약 ¥1,500~¥2,500.</li>
+<li><a href="https://www.google.com/maps/place/Umegaoka+Sushi+no+Midori+Shibuya/@35.6595,139.6990,17z" target="_blank">梅丘寿司の美登利 渋谷店 (Umegaoka Sushi no Midori Shibuya)</a> : 회전초밥 & 스시 전문점, 신선한 재료로 인기.</li></ul>
+                </details>
                 </div>
             <div class="schedule-item">
                 <div class='region-label' style='background:#E1F5FE;color:#01579B;'>시부야</div>
                 <div class="location-line">
-                    <span class="location"><a href='https://maps.app.goo.gl/VJVxGZmHZcjXqLfg7' target='_blank'>b8ta Tokyo (방문 미정)</a></span> – 브랜드와 연결하는 체험형 플랫폼
+                    <span class="location"><a href='https://maps.app.goo.gl/VJVxGZmHZcjXqLfg7' target='_blank'>b8ta Tokyo (방문 미정)</a></span>&nbsp;&nbsp;&nbsp;브랜드와 연결하는 체험형 플랫폼
                 </div>
             
                     <div class='content-box'>
@@ -643,11 +807,16 @@ AI 카메라로 고객 행동 데이터를 수집해 브랜드에 제공하는 �
                     <div class='content-text'>b8ta Tokyo에서 각 카테고리(가전, 뷰티, 식품 등)를 장르 구분 없이 배치하고 구매 압박 없이 관심 있는 제품을 자유롭게 선택해 탐색할 수 있도록 하고, 안내 태블릿과 테스터(전문 직원)를 둔 이유가 무엇인지 팀원들과 논의해 봅니다.
 BIC Camera와 비교하여 b8ta Tokyo의 사업 모델은 무엇인지 생각해 봅니다.</div>
                 </div>
+                
+                <details class="experience-box">
+                    <summary>&nbsp;체험 결과</summary>
+                    <ul><li>b8ta는 ‘판매’가 아닌 ‘실험’을 위한 리테일 실험실이었습니다. 방문객들은 제품을 직접 만져보고, 테스터와 대화하며, 브랜드 스토리를 태블릿으로 확인했습니다. AI 카메라가 고객의 반응 데이터를 수집해 브랜드에 피드백을 제공하는 구조도 인상적이었습니다. 구매 압박이 전혀 없어 ‘탐색의 자유’가 강조된 공간이었고, 이는 기존 리테일과 완전히 다른 접근입니다. 브랜드와 소비자가 데이터를 매개로 함께 진화하는 ‘Retail as a Service’의 대표적 모델을 실감할 수 있었습니다.</li><li>b8ta에 들어가자 공기부터 달랐습니다. 조용하고 여유로운 공간에서 제품들이 마치 전시품처럼 놓여 있었어요. 직원이 다가와 “이건 신생 브랜드의 첫 제품이에요. 직접 써보시겠어요?”라며 안내해줬고, 옆의 태블릿에는 브랜드 철학과 개발자가 직접 남긴 메시지가 표시되어 있었습니다. 판매 압박이 없다는 점이 가장 신선했습니다. 오히려 ‘탐색의 자유’를 보장해주는 느낌이었어요. ‘Retail as a Service’가 이런 거구나, 소비자가 단순 구매자가 아니라 실험의 일부가 된다는 사실이 흥미로웠습니다.</li></ul>
+                </details>
                 </div>
             <div class="schedule-item">
                 <div class='region-label' style='background:#E1F5FE;color:#01579B;'>시부야</div>
                 <div class="location-line">
-                    <span class="location"><a href='https://maps.app.goo.gl/h575m2pY7KnTnSNw6' target='_blank'>Pepper Parlor</a></span> – 로봇과 인간의 공존을 실증하는 미래형 서비스 플랫폼
+                    <span class="location"><a href='https://maps.app.goo.gl/h575m2pY7KnTnSNw6' target='_blank'>Pepper Parlor</a></span>&nbsp;&nbsp;&nbsp;로봇과 인간의 공존을 실증하는 미래형 서비스 플랫폼
                 </div>
             
                     <div class='content-box'>
@@ -674,11 +843,24 @@ BIC Camera와 비교하여 b8ta Tokyo의 사업 모델은 무엇인지 생각해
                     <div class='team-quest-title'>Team Quest <span class='num'>#7-3</span></div>
                     <div class='content-text'>로봇을 활용한 3가지 사업 모델이 향후 고령자 복지시설, 공항, 병원, 호텔 등 다양한 서비스 현장으로 어떻게 확장될 수 있는지 비즈니스 모델의 확장성과 응용 가능성을 고민해 봅시다.</div>
                 </div>
-                <details><summary>🗒️ Note</summary><p><a href="https://tabelog.com/kr/tokyo/A1303/A130301/13241764/table/" target="_blank">실시간 좌석 에약</a></p></details></div>
+                
+                <details class="experience-box">
+                    <summary>&nbsp;체험 결과</summary>
+                    <ul><li>페퍼, Servi, Whiz 등 다양한 로봇이 실제 카페 운영에 참여하며 ‘로봇과 인간의 공존’을 실험하고 있었습니다. 고객 응대, 서빙, 청소 등에서 로봇이 협업하는 모습을 통해 기술이 일상 속 노동을 어떻게 보조할 수 있는지를 직접 볼 수 있었습니다. 로봇 공연과 음식 서빙이 자연스럽게 어우러져, ‘기술을 통한 서비스의 인간화’라는 메시지가 강하게 전해졌습니다. 이러한 형태는 향후 의료, 공항, 복지시설 등에서도 확장 가능성이 크며, 기술이 사회에 기여하는 방향을 제시하는 의미 있는 사례였습니다.</li><li>입구에서 페퍼 로봇이 반갑게 인사했습니다. 서빙 로봇이 음료를 나르고, 청소 로봇이 조용히 지나가며, 11시 30분이 되자 로봇들이 음악에 맞춰 군무를 추기 시작했죠. 처음엔 신기했지만 곧 익숙해졌어요 — 인간과 로봇이 자연스럽게 함께 일하고 있었습니다. 커피 맛은 평범했지만, 그보다 중요한 건 ‘로봇이 일상 속에 있다’는 사실이었습니다. 로봇이 기술의 상징이 아니라 서비스 파트너로 작동하는 모습에서 미래 일자리의 가능성을 느꼈습니다.</li></ul>
+                </details>
+                
+                <details class="note-box">
+                    <summary>&nbsp;주변 맛집</summary>
+                    <ul><li><a href="https://tabelog.com/kr/tokyo/A1303/A130301/13241764/table/" target="_blank">Pepper Parlor</a> : 실시간 좌석 에약.</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&origin=Pepper+Parlor,+Shibuya,+Tokyo&destination=Umegaoka+Sushi+no+Midori+Shibuya,+Tokyo&travelmode=walking" target="_blank">Umegaoka Sushi no Midori 渋谷店</a> : 신선한 스시 & 회전초밥 전문. 런치 약 ¥1,500~¥3,000.</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&origin=Pepper+Parlor,+Shibuya,+Tokyo&destination=Mo-mo-paradise+Shibuya+Center-Gai,+Tokyo&travelmode=walking" target="_blank">Mo-mo-paradise 渋谷センター街店</a> : 샤브샤브·스키야키 무제한 전문. 런치 약 ¥2,500~¥3,500.</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&origin=Pepper+Parlor,+Shibuya,+Tokyo&destination=Gyukatsu+Motomura+Shibuya,+Tokyo&travelmode=walking" target="_blank">牛かつ もと村 渋谷店</a> : 두꺼운 소고기 커틀릿(규카츠) 전문. 점심 약 ¥1,500~¥2,500.</li></ul>
+                </details>
+                </div>
             <div class="schedule-item">
                 <div class='region-label' style='background:#E1F5FE;color:#01579B;'>시부야</div>
                 <div class="location-line">
-                    <span class="location"><a href='https://maps.app.goo.gl/3kk9sN6DcAAqu4aS9' target='_blank'>MEGA DONKI Shibuya</a></span> – 일본을 대표하는 할인 잡화점의 본점
+                    <span class="location"><a href='https://maps.app.goo.gl/3kk9sN6DcAAqu4aS9' target='_blank'>MEGA DONKI Shibuya</a></span>&nbsp;&nbsp;&nbsp;일본을 대표하는 할인 잡화점의 본점
                 </div>
             
                     <div class='content-box'>
@@ -717,11 +899,23 @@ BIC Camera와 비교하여 b8ta Tokyo의 사업 모델은 무엇인지 생각해
                     <div class='team-quest-title'>Team Quest <span class='num'>#6-1</span></div>
                     <div class='content-text'>돈키호테의 마케팅과 엔터테인먼트적 요소를 결합한 독자적인 매장 분위기(중독성 있는 음악, 화려한 조명 등)가 소비자의 쇼핑 경험을 어떻게 단순한 구매 행위 이상의 즐거움으로 바꾸는지에 대해서 논의해 봅니다.</div>
                 </div>
+                
+                <details class="experience-box">
+                    <summary>&nbsp;체험 결과</summary>
+                    <ul><li>매장 내부는 일부러 복잡하게 진열된 ‘압축 진열’로 고객의 탐색 본능을 자극하고 있었습니다. 좁은 통로를 돌며 예상치 못한 상품을 발견하는 재미가 ‘보물찾기’처럼 느껴졌습니다. 화려한 조명과 빠른 음악이 중독성 있는 쇼핑 분위기를 만들었고, 현지인뿐 아니라 외국인 관광객들이 한참을 머물렀습니다. 이 전략은 ‘가격 경쟁’이 아니라 ‘탐험의 즐거움’을 통해 체류시간과 구매 전환율을 높이는 방식으로 작동하고 있었습니다. 돈키호테는 엔터테인먼트형 리테일의 본질을 가장 잘 보여주는 공간이었습니다.</li><li>한 발 들어서는 순간 정신이 번쩍 들었습니다. 조명, 음악, 상품, 사람… 모든 게 꽉 차 있었어요. 그런데 그 혼란 속에서도 묘한 즐거움이 있었습니다. 골목마다 다른 카테고리의 상품이 뒤섞여 있어서, 원래 사려던 물건 외에도 ‘이런 것도 있었네?’ 하며 손이 가더군요. 직원의 안내보단 스스로 탐험하는 재미가 훨씬 컸습니다. ‘보물찾기형 쇼핑’이란 표현이 딱 맞아요. 복잡한 진열이 불편함이 아니라, 체류 시간을 늘리고 구매를 유도하는 전략이었음을 몸소 느꼈습니다.</li></ul>
+                </details>
+                
+                <details class="note-box">
+                    <summary>&nbsp;주변 맛집</summary>
+                    <ul><li><a href="https://www.google.com/maps/dir/?api=1&origin=MEGA+DONKI+Shibuya,+Tokyo&destination=Gyumaru+Shibuya,+Tokyo&travelmode=walking" target="_blank">牛丸 渋谷店</a> : 와규 고기 무제한 야키니쿠. 저녁 약 ¥4,000 이상.</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&origin=MEGA+DONKI+Shibuya,+Tokyo&destination=Nabezo+Shibuya+Center+Gai,+Tokyo&travelmode=walking" target="_blank">鍋ぞう 渋谷センター街店</a> : 샤브샤브·스키야키 전문점. 런치 약 ¥2,000~¥3,000.</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&origin=MEGA+DONKI+Shibuya,+Tokyo&destination=Umegaoka+Sushi+no+Midori+Shibuya,+Tokyo&travelmode=walking" target="_blank">梅丘寿司の美登利 渋谷店</a> : 회전초밥·스시 전문점, 가성비 높음. 런치 약 ¥1,500~¥3,000.</li></ul>
+                </details>
                 </div>
             <div class="schedule-item">
                 <div class='region-label' style='background:#FFF8E1;color:#EF6C00;'>마루노우치</div>
                 <div class="location-line">
-                    <span class="location"><a href='https://maps.app.goo.gl/6eTT8E8kDVhgUnUu8' target='_blank'>KITTE Marunouchi </a></span> – 우체국 건물을 개조해 만든 일본 전통을 테마로한 상업시설
+                    <span class="location"><a href='https://maps.app.goo.gl/6eTT8E8kDVhgUnUu8' target='_blank'>KITTE Marunouchi </a></span>&nbsp;&nbsp;&nbsp;우체국 건물을 개조해 만든 일본 전통을 테마로한 상업시설
                 </div>
             
                     <div class='content-box'>
@@ -762,11 +956,23 @@ BIC Camera와 비교하여 b8ta Tokyo의 사업 모델은 무엇인지 생각해
                     <div class='team-quest-title'>Team Quest <span class='num'>#10-2</span></div>
                     <div class='content-text'>만약 Kitte Marunouchi 와 Ginza Itoya에 대한 충성 고객으로서, 지속적으로 재방문하는 고객이 있다면, 어떠한 경험을 기대할 지에 대해 논의해 봅시다.</div>
                 </div>
+                
+                <details class="experience-box">
+                    <summary>&nbsp;체험 결과</summary>
+                    <ul><li>KITTE는 우체국 건물을 리모델링해 전통과 현대를 절묘하게 결합한 공간이었습니다. 내부는 밝고 개방감이 있으며, 곳곳에 일본 각지의 장인 브랜드와 특산품이 전시돼 있었습니다. 옥상 정원에서 도쿄역 야경을 감상하며 도심 속 휴식을 즐길 수 있었고, 계절별 전시가 공간의 매력을 더했습니다. 충성 고객이라면 ‘일본다움’과 ‘새로움’을 함께 느낄 수 있는 이 장소를 반복 방문할 가능성이 높습니다. 즉, 감각적 미학과 지역성, 역사적 스토리를 결합한 큐레이션이 재방문 동기를 지속적으로 만들어내고 있었습니다.</li><li>도쿄역을 바라보며 KITTE의 옥상정원에 서 있었을 때, 바람과 빛이 너무 좋아 한참을 머물렀습니다. 아래로는 유리 천장을 통과한 쇼핑 공간이 한눈에 보였고, 일본 전국의 브랜드들이 한자리에 모여 있었습니다. ‘지역성과 장인정신’을 강조하는 큐레이션 덕분에, 단순 쇼핑이 아니라 일본 문화의 깊이를 경험하는 느낌이었습니다. 시즌별 전시와 일루미네이션으로 늘 새로운 분위기를 만들어 재방문을 유도하는 점이 매력적이었어요. ‘전통의 현대화’라는 테마를 가장 우아하게 구현한 공간이었습니다.</li></ul>
+                </details>
+                
+                <details class="note-box">
+                    <summary>&nbsp;주변 맛집</summary>
+                    <ul><li><a href="https://www.google.com/maps/place/Nemuro+Hanamaru+KITTE+Marunouchi/@35.6809,139.7671,17z" target="_blank">根室花まる KITTE丸の内店 (Nemuro Hanamaru KITTE Marunouchi)</a> : 컨베이어 벨트 스시 전문점. 점심 약 ¥2,000대.</li>
+<li><a href="https://www.google.com/maps/place/Tonkatsu+Maisen+Daimaru+Tokyo/@35.6811,139.7675,17z" target="_blank">とんかつ まい泉 大丸東京レストラン店 (Tonkatsu Maisen Daimaru Tokyo Restaurant)</a> : 일본 대표 돈가츠 전문, 마루노우치역 인근.</li>
+<li><a href="https://www.google.com/maps/place/Teppanyaki+Ten+Honmaru/@35.6812,139.7679,17z" target="_blank">鉄板焼 天 本丸 (Teppanyaki Ten Honmaru)</a> : 도쿄역 옆 철판구이 고급 레스토랑. 디너 고급 코스 중심.</li></ul>
+                </details>
                 </div></div><div class='day-section' id='Day3'><div class='day-header'>Day3</div>
             <div class="schedule-item">
                 <div class='region-label' style='background:#E0ECFF;color:#1E3A8A;'>긴자</div>
                 <div class="location-line">
-                    <span class="location"><a href='https://maps.app.goo.gl/iFgBATxvSH1TtdZN9' target='_blank'>DAISO</a></span> – 저성장 시대의 생활 인프라 브랜드
+                    <span class="location"><a href='https://maps.app.goo.gl/iFgBATxvSH1TtdZN9' target='_blank'>DAISO</a></span>&nbsp;&nbsp;&nbsp;저성장 시대의 생활 인프라 브랜드
                 </div>
             
                     <div class='content-box'>
@@ -797,11 +1003,25 @@ BIC Camera와 비교하여 b8ta Tokyo의 사업 모델은 무엇인지 생각해
                     <div class='team-quest-title'>Team Quest <span class='num'>#1-1</span></div>
                     <div class='content-text'>동일한 회사의 세 가지 하위 브랜드(DAISO·Standard Products·THREEPPY)는 같은 층에 모여 통합적인 고객 경험을 제공하고 있습니다. 저렴함, 품질과 디자인, 감성적 소비라는 다른 이질적인 특징이 한 공간에서 어떻게 조화를 이루며 고객들이 찾는 곳으로 살아남을 수 있는지, 그 숨은 비결에 대해서 논의해 봅니다.</div>
                 </div>
+                
+                <details class="experience-box">
+                    <summary>&nbsp;체험 결과</summary>
+                    <ul><li>세 브랜드가 한 층에 함께 구성된 통합 매장은 ‘가격대별·감성별 선택의 즐거움’을 극대화한 구조였습니다. 다이소는 생활 필수품, 스탠다드 프로덕츠는 합리적 고품질, 쓰리피는 트렌디한 디자인 중심으로 각각의 개성이 뚜렷했습니다. 세 매장을 오가며 소비자는 자신의 취향과 예산에 맞는 소비 여정을 설계할 수 있었고, 이는 ‘모두를 위한 가치 소비 플랫폼’이라는 새로운 형태의 리테일로 완성되었습니다. 긴자라는 고급 상권 안에서도 ‘합리적 아름다움’을 제시하며, 누구나 들어올 수 있는 포용적 브랜드 정체성을 성공적으로 구현하고 있었습니다.</li><li>세 브랜드가 한 층에 나란히 있다는 점이 흥미로웠습니다. 다이소 구역은 여전히 활기차고, 스탠다드 프로덕츠는 은은한 우드톤으로 차분했으며, 쓰리피는 밝고 컬러풀했습니다. 가격대는 다르지만 한 공간에서 자연스럽게 이어져 있어서, 고객은 ‘오늘은 어떤 나로 소비할까’를 선택하는 듯한 느낌이 들었습니다. 긴자의 고급스러운 이미지 속에서도 전혀 위화감이 없었고, 오히려 **‘모두를 위한 라이프스타일’**이라는 메시지가 명확했습니다. 세 브랜드가 함께 만들어낸 조화는 다이소의 가장 세련된 형태였습니다.</li></ul>
+                </details>
+                
+                <details class="note-box">
+                    <summary>&nbsp;주변 맛집</summary>
+                    <ul><li><a href="https://www.google.com/maps/dir/?api=1&origin=DAISO+Ginza,+Tokyo&destination=IPPUDO+Ginza,+Tokyo&travelmode=walking" target="_blank">IPPUDO Ginza</a> : 일본식 라멘 전문점. 클래식 톤코츠 라멘과 차슈 추가 가능, 런치 약 ¥1,200~¥1,500.</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&origin=DAISO+Ginza,+Tokyo&destination=A+Happy+Pancake+Ginza,+Tokyo&travelmode=walking" target="_blank">A Happy Pancake Ginza</a> : 부드럽고 풍미 가득한 팬케이크 카페. 버터 밀크 팬케이크, 런치 약 ¥1,800~¥2,300.</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&origin=DAISO+Ginza,+Tokyo&destination=Kobe+Beef+Steak+Rokko+Ginza,+Tokyo&travelmode=walking" target="_blank">Kobe Beef Steak Rokko Ginza</a> : A5 등급 고베 비프 스테이크 전문점. 런치 약 ¥5,000~¥8,000.</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&origin=DAISO+Ginza,+Tokyo&destination=Salmon+Atelier+Hus+Ginza,+Tokyo&travelmode=walking" target="_blank">Salmon Atelier Hus Ginza</a> : 연어 덮밥·피자 등 연어 메뉴 전문 다이닝. 런치 약 ¥1,500~¥2,500.</li>
+<li><a href="https://www.google.com/maps/dir/?api=1&origin=DAISO+Ginza,+Tokyo&destination=Belgian+Beer+Pub+Favori+Ginza,+Tokyo&travelmode=walking" target="_blank">Belgian Beer Pub Favori Ginza</a> : 벨기에 맥주 펍 & 유럽식 플래터 안주, 저녁 약 ¥3,000~¥5,000.</li></ul>
+                </details>
                 </div>
             <div class="schedule-item">
                 <div class='region-label' style='background:#E0ECFF;color:#1E3A8A;'>긴자</div>
                 <div class="location-line">
-                    <span class="location"><a href='https://maps.app.goo.gl/Ds6MRoW8hDH2q8Wr6' target='_blank'>Standard Products</a></span> – 100엔을 넘어선 품질 혁신
+                    <span class="location"><a href='https://maps.app.goo.gl/Ds6MRoW8hDH2q8Wr6' target='_blank'>Standard Products</a></span>&nbsp;&nbsp;&nbsp;100엔을 넘어선 품질 혁신
                 </div>
             
                     <div class='content-box'>
@@ -822,7 +1042,7 @@ BIC Camera와 비교하여 b8ta Tokyo의 사업 모델은 무엇인지 생각해
             <div class="schedule-item">
                 <div class='region-label' style='background:#E0ECFF;color:#1E3A8A;'>긴자</div>
                 <div class="location-line">
-                    <span class="location"><a href='https://maps.app.goo.gl/ZgpJ73AYCBkUHV7V9' target='_blank'>THREEPPY</a></span> – 디자인 감성과 실용 소비의 결합
+                    <span class="location"><a href='https://maps.app.goo.gl/ZgpJ73AYCBkUHV7V9' target='_blank'>THREEPPY</a></span>&nbsp;&nbsp;&nbsp;디자인 감성과 실용 소비의 결합
                 </div>
             
                     <div class='content-box'>
@@ -843,6 +1063,6 @@ BIC Camera와 비교하여 b8ta Tokyo의 사업 모델은 무엇인지 생각해
             <div class="schedule-item">
                 
                 <div class="location-line">
-                    <span class="location">오후 팀 일정</span> – Q9,10 중 일정상 가보지 못한 곳
+                    <span class="location">오후 팀 일정</span>&nbsp;&nbsp;&nbsp;Q9,10 중 일정상 가보지 못한 곳
                 </div>
             </div></div></body></html>
